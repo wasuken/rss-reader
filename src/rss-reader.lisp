@@ -13,7 +13,6 @@
   (let ((titles (base-get xml-tree 2))
 		(links  (base-get xml-tree 4))
 		(descs  (base-get xml-tree 10)))
-	(print titles)
 	(mapcar #'(lambda (x y z) (list :|title| x :|link| y :|desc| z))
 			titles
 			links
